@@ -33,11 +33,10 @@ function donate(cardId) {
 
     document.getElementById(`donation-input${cardId}`).value = '';
 
-    // for modal
+    //  modal
     const modal = document.getElementById('modal');
     modal.classList.remove('hidden');
 
-    //add section history
     
 }
 
@@ -52,7 +51,7 @@ new Date().toLocaleString('en-US', {
   timeStyle: 'medium',
   dateStyle: 'full'
   });
-// adding transaction history
+//  history
 function addTransactionHistory(cardId, amount) {
   const cardTitles = ['Flood at Noakhali, Bangladesh', 'Flood Relief in Feni,Bangladesh', 'Aid for Injured in the Quota Movement'];
   const now = new Date();
